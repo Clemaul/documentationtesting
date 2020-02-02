@@ -9,6 +9,8 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.TestInfo;
 
 import java.io.File;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collections;
@@ -39,7 +41,11 @@ public class ApprovalsBase {
                 getComment(testInfo.getTestClass().get(), testInfo.getTestMethod().get().getName()),
                 sb.toString());
 
-        final Path docRootPath = Paths.get(this.getClass().getClassLoader().getResource("").getPath())
+        
+        String path = this.getClass().getClassLoader().getResource("").getPath();
+        path = path.replaceAll("\\/[A-Z]:", ""); //Windows remove "/C:"
+        
+        final Path docRootPath = Paths.get(path)
                 .resolve(Paths.get("..", "..", "src", "test", "docs"));
 
         Approvals.verify(
