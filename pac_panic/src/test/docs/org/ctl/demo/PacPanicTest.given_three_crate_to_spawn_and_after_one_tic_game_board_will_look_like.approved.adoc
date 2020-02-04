@@ -1,6 +1,6 @@
-= Game start with empty 13 by 6 cells
+= Given three crate to spawn and after one tic game board will look like
 
-Game start with a empty 13 *6  cells
+
 
 :0: image:tiles/empty.png[]
 :1: image:tiles/crate.png[]
@@ -10,11 +10,14 @@ Game start with a empty 13 *6  cells
 :5: image:tiles/eaterR.png[]
 :6: image:tiles/eaterL.png[]
 
-The number of row is = 13
-
 [.myTable]
 |===
-| {0}| {0}| {0}| {0}| {0}| {0}
+| {1}| {0}
+| {1}| {1}
+|===
+[.myTable]
+|===
+| {0}| {0}| {1}| {1}| {0}| {0}
 | {0}| {0}| {0}| {0}| {0}| {0}
 | {0}| {0}| {0}| {0}| {0}| {0}
 | {0}| {0}| {0}| {0}| {0}| {0}

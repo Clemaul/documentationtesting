@@ -1,0 +1,24 @@
+= Next tiles to spawn need to be 2 by 2 with a empty one at first line at second tile
+
+
+
+:0: image:tiles/empty.png[]
+:1: image:tiles/crate.png[]
+:2: image:tiles/crate_dead.png[]
+:3: image:tiles/ghost.png[]
+:4: image:tiles/ghost_afraid.png[]
+:5: image:tiles/eaterR.png[]
+:6: image:tiles/eaterL.png[]
+
+Tiles to spawn is a 2 by 2 tiles
+
+The second tile at first row is Empty
+++++
+<style>
+.myTable td{
+background-color: grey;
+border: 0;
+padding : 0;
+</style>
+++++
+

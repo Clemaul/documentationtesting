@@ -3,11 +3,13 @@ package pac_panic;
 public enum Tiles {
 
 	Empty (0),
-	Block (1),
-	RedGhost (2),
-	BlueGhost (3),
-	PacMan (4),
-	Fairy (5);
+	Crate (1),
+	CrateDead (2),
+	Ghost (3),
+	GhostAfraid (4),
+	EaterRight (5),
+	EaterLeft (6),
+	Fairy (7);
 	
 	private int value;
 

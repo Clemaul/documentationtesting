@@ -1,0 +1,27 @@
+= Spawnable tiles with three crate look like
+
+
+
+:0: image:tiles/empty.png[]
+:1: image:tiles/crate.png[]
+:2: image:tiles/crate_dead.png[]
+:3: image:tiles/ghost.png[]
+:4: image:tiles/ghost_afraid.png[]
+:5: image:tiles/eaterR.png[]
+:6: image:tiles/eaterL.png[]
+
+[.myTable]
+|===
+| {1}| {0}
+| {1}| {1}
+|===
+
+++++
+<style>
+.myTable td{
+background-color: grey;
+border: 0;
+padding : 0;
+</style>
+++++
+
