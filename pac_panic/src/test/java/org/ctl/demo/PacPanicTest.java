@@ -74,6 +74,22 @@ public class PacPanicTest  extends ApprovalsBase {
     	displayCells(game.tic().tic().getCells());
     }
     
+    @Test
+    public void given_a_empty_board_with_three_crate_to_spawn_and_after_13_tics_game_board_will_look_like() {
+    	PacPanic game = new PacPanic();   	
+    	game.setTilesToSpawn(THREE_CRATES);
+    	displayCells(game.getTilesToSpawn());
+    	displayCells(tic(game, 13).getCells());
+    }
+    
+	public PacPanic tic(PacPanic game, int n) {
+		PacPanic lastState = null;
+		for (int i = 0; i < n; i++) {
+			lastState = game.tic();
+		}
+		return lastState;
+	}
+    
     private void displayCells(Tiles[][] cells) {	
     	tableStart();
     	for(int i=0; i<cells.length; i++) {
